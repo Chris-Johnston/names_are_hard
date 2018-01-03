@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+// use the style reset
+@import "reset";
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed');
+
+$font-title: 'Oswald', sans-serif;
+$font-main: 'Roboto Condensed', sans-serif !important;
+
+$background-color: #142B51 !default;
+$code-background-color: #D9D9D9;
+$code-foreground-color: black;
+//$foreground-color: #E9E2D7 !default;
+$foreground-color: #E2E4E9 !default;
+$highlight-color: #f3eee6;
+
+$line-style: 3px dashed $foreground-color;
+
+body
+{
+  color: $foreground-color;
+  background-color: $background-color;
+  font-family: $font-main;
+  font-size: 14pt;
+  line-height: 20pt;
+}
+
+// .site-header a
+// {
+//   color: $foreground-color;
+//   text-decoration: none;
+// }
+
+.site-header
+{
+  position:relative;
+
+  background-color: $background-color;
+  color: $foreground-color;
+
+  font-family: $font-title;
+
+  height: 50pt;
+  margin-bottom: 20pt;
+}
+
+.site-title
+{
+  position: absolute;
+  bottom: 7pt;
+  left: 10pt;
+  font-size: 40pt;
+  text-decoration: underline;
+}
+
+.github-link
+{
+  position: absolute;
+  bottom: 7pt;
+  right: 10pt;
+  font-size: 12pt;
+}
+
+.home
+{
+  margin-left: 20pt;
+  margin-right: 20pt;
+}
+
+.post-wrapper
+{
+  border-top: $line-style;
+  padding-top: 10pt;
+  padding-bottom: 5pt;
+  border-bottom: $line-style;
+}
+
+.post-list-heading
+{
+  display: inline;
+}
+
+.post-list
+{
+  display: inline;
+}
+
+.post-element
+{
+  display: inline;
+  margin-left: 5pt;
+}
+
+a {
+  color: $highlight-color;
+
+  &:visited {
+    color: darken($highlight-color, 10%);
+  }
+
+  &:hover {
+    color: $highlight-color;
+    text-decoration: underline;
+  }
+}
+
+.site-title, .github-link
+{
+  color: $highlight-color;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 10pt;
+  margin-bottom: 5pt;
+}
+
+h1 { font-size: 25pt;}
+h2 { font-size: 22pt;}
+h3 { font-size: 20pt;}
+h4 { font-size: 18pt;}
+h5 { font-size: 15pt;}
+h6 { font-size: 12pt;}
+
+b, strong, i, em
+{
+  color: $highlight-color;
+}
+
+b, strong
+{
+  font-weight: bold;
+}
+
+i, em
+{
+  font-style: italic;
+}
+
+ul
+{
+  list-style-type: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+code
+{
+  padding: 8pt;
+  display: block;
+  background-color: $code-background-color;
+  color: $code-foreground-color;
+  font-family: monospace;
+}

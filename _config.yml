@@ -1,0 +1,9 @@
+# meta information
+website_title: names_are_hard
+
+theme: names_are_hard
+description: >
+    Personal website of Chris Johnston.
+baseurl: ""
+url: "http://chrisjohnston.me/"
+github_username: Chris-Johnston
