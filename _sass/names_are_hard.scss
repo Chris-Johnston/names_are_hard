@@ -40,14 +40,16 @@ body
 
   font-family: $font-title;
 
-  height: 50pt;
-  margin-bottom: 20pt;
+  height: 70pt;
+  // margin-bottom: 20pt;
+  // padding-bottom: 10pt;
 }
 
 .site-title
 {
+  height: 30pt;
   position: absolute;
-  bottom: 7pt;
+  bottom: 15pt;
   left: 10pt;
   font-size: 40pt;
   text-decoration: underline;
@@ -56,7 +58,7 @@ body
 .github-link
 {
   position: absolute;
-  bottom: 7pt;
+  bottom: 15pt;
   right: 10pt;
   font-size: 12pt;
 }
@@ -89,6 +91,24 @@ body
 {
   display: inline;
   margin-left: 5pt;
+}
+
+.page-title
+{
+  margin-top: 10pt;
+  margin-bottom: 20pt;
+  padding-bottom: 5pt;
+  border-bottom: $line-style;
+}
+
+.page-footer
+{
+  height: auto;
+}
+
+.footer-copyright
+{
+  text-align: center;
 }
 
 a {
@@ -140,11 +160,20 @@ i, em
 
 ul
 {
+  margin-left: 15pt;
   list-style-type: disc;
 }
 
 ol {
+  margin-left: 15pt;
   list-style: decimal;
+}
+
+li {
+  > ul,
+  > ol {
+  margin-bottom: 0;
+  }
 }
 
 code
@@ -155,3 +184,41 @@ code
   color: $code-foreground-color;
   font-family: monospace;
 }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+blockquote
+{
+  display: block;
+  padding: 8pt;
+  background: lighten($background-color, 10%);
+}
+
+table {
+  margin-bottom: 5pt;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid $foreground-color;
+  tr {
+    &:nth-child(even) {
+      background-color: lighten($background-color, 10%);
+    }
+  }
+  th, td {
+    padding: 2pt;
+  }
+  th {
+    background-color: lighten($background-color, 15%);
+    border: 1px solid $foreground-color;
+    border-bottom-color: darken($foreground-color, 35%);
+  }
+  td {
+    border: 1px solid darken($foreground-color, 35%);
+  }
+}
+
+@import "syntax";
