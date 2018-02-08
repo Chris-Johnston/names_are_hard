@@ -4,9 +4,11 @@
 @import "reset";
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed');
 
+// fonts
 $font-title: 'Oswald', sans-serif;
 $font-main: 'Roboto Condensed', sans-serif !important;
 
+// colors
 $background-color: #142B51 !default;
 $text-background-color: #263037;
 $code-background-color: #D9D9D9;
@@ -14,6 +16,7 @@ $code-foreground-color: black;
 $foreground-color: #E2E4E9 !default;
 $highlight-color: #d2f9e6;
 
+// fonts, only the body
 $body-font-size: 12pt !default;
 $body-li-size: 12pt;
 
@@ -44,13 +47,6 @@ body li
   margin-bottom: 2pt;
 }
 
-
-// .site-header a
-// {
-//   color: $foreground-color;
-//   text-decoration: none;
-// }
-
 .site-header
 {
   position:relative;
@@ -61,8 +57,7 @@ body li
   font-family: $font-title;
 
   height: 50pt;
-  // margin-bottom: 20pt;
-  // padding-bottom: 10pt;
+
 }
 
 // tall site header used for headerposts

@@ -13,19 +13,19 @@
   {{ content }}
 </div>
 
-  <!-- this does not work -->
-  <!--{% if site.posts.size > 0 %}-->
-  <!--<div class="home-post-wrapper">-->
-    <!--{% for post in site.posts limit:1 %}-->
-      <!--<div class="home-first-post-title">-->
-        <!--{{ post.title }}-->
-      <!--</div>-->
-      <!--<div class="home-first-post-wrapper">-->
-        <!--{{ post.excerpt | strip_html | truncatewords:50 }}-->
-      <!--</div>-->
-    <!--{% endfor %}-->
-  <!--</div>-->
-  <!--{% endif %}-->
+  <!--todo this does not work -->
+  {% if site.posts.size > 0 %}
+  <div class="home-post-wrapper">
+    {% for post in site.posts limit:1 %}
+      <div class="home-first-post-title">
+        {{ post.title }}
+      </div>
+      <div class="home-first-post-wrapper">
+        {{ post.excerpt | strip_html | truncatewords:50 }}
+      </div>
+    {% endfor %}
+  </div>
+  {% endif %}
 
 </div>
 
