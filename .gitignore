@@ -5,7 +5,6 @@ _site
 Gemfile.lock
 
 _site
-index.md
 .jekyll-metadata
 images
 

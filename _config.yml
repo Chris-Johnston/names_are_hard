@@ -3,7 +3,7 @@ website_title: names_are_hard
 
 theme: names_are_hard
 description: >
-    Personal website of Chris Johnston.
+    Demo website for the names_are_hard theme
 baseurl: ""
-url: "http://chrisjohnston.me/"
+url: "https://github.com/Chris-Johnston/names_are_hard.git"
 github_username: Chris-Johnston
