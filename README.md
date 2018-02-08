@@ -4,6 +4,8 @@
 
 This is a theme that is used for https://chris-johnston.me
 
+<img src="screenshot.png" style="max-width: 400px" />
+
 
 ## Installation
 
