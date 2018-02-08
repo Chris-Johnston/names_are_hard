@@ -156,7 +156,13 @@ body li
 
 .page-footer
 {
-  height: auto;
+  //background: $background-color;
+  height: 10pt;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5pt;
 }
 
 .footer-copyright
