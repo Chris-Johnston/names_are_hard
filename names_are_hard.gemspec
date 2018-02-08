@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "names_are_hard"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Chris Johnston"]
   spec.email         = ["githubchrisjohnston@gmail.com"]
 
   spec.summary       = %q{This is a placeholder summary}
-  spec.homepage      = "https://chrisjohnston.me"
+  spec.homepage      = "https://github.com/Chris-Johnston/names_are_hard"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
