@@ -1,5 +1,7 @@
 # names_are_hard
 
+[![Gem Version](https://badge.fury.io/rb/names_are_hard.svg)](https://badge.fury.io/rb/names_are_hard)
+
 This is a theme that is used for https://chris-johnston.me
 
 
