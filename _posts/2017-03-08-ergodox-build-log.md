@@ -5,7 +5,7 @@ date: 2017-03-08
 categories: website
 ---
 
-![Ergodox Build Log](/images/ergodoxbuild/ergodox (5).jpg)
+![Ergodox Build Log](/images/ergodoxbuild/post.PNG)
 
 ## Background
 

@@ -8,22 +8,39 @@ $font-title: 'Oswald', sans-serif;
 $font-main: 'Roboto Condensed', sans-serif !important;
 
 $background-color: #142B51 !default;
+$text-background-color: #263037;
 $code-background-color: #D9D9D9;
 $code-foreground-color: black;
-//$foreground-color: #E9E2D7 !default;
 $foreground-color: #E2E4E9 !default;
 $highlight-color: #f3eee6;
 
-$line-style: 3px dashed $foreground-color;
+$line-style: 0.5px dotted $foreground-color;
 
 body
 {
   color: $foreground-color;
   background-color: $background-color;
   font-family: $font-main;
-  font-size: 14pt;
-  line-height: 20pt;
 }
+
+body p
+{
+  font-size: 10pt;
+  line-height: 12pt;
+
+  margin-top: 7pt;
+  margin-bottom: 7pt;
+}
+
+body li
+{
+  font-size: 10pt;
+  line-height: 10pt;
+
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+
 
 // .site-header a
 // {
@@ -40,15 +57,27 @@ body
 
   font-family: $font-title;
 
-  height: 70pt;
+  height: 50pt;
   // margin-bottom: 20pt;
   // padding-bottom: 10pt;
+}
+
+// tall site header used for headerposts
+.site-header-tall
+{
+  // I'm literally extending the height of it. lol
+  @extend .site-header;
+
+  height: 70pt;
+
+  border-bottom: $line-style;
 }
 
 .site-title
 {
   height: 30pt;
   position: absolute;
+  top: 5pt;
   bottom: 15pt;
   left: 10pt;
   font-size: 40pt;
@@ -65,8 +94,16 @@ body
 
 .home
 {
-  margin-left: 20pt;
-  margin-right: 20pt;
+  //margin-left: 20pt;
+  //margin-right: 20pt;
+
+  padding-left: 20pt;
+  padding-right: 20pt;
+}
+
+.content-wrapper
+{
+
 }
 
 .post-wrapper
@@ -75,6 +112,21 @@ body
   padding-top: 10pt;
   padding-bottom: 5pt;
   border-bottom: $line-style;
+}
+
+.site-header-tall > .post-wrapper
+{
+  border: 0;
+  padding-top: 0;
+  position: absolute;
+  top: 50pt;
+  left: 10pt;
+  font-size: 12pt;
+}
+
+.site-header-tall > .post-wrapper > .post-list-heading
+{
+  font-size: 12pt;
 }
 
 .post-list-heading
@@ -100,6 +152,7 @@ body
   padding-bottom: 5pt;
   border-bottom: $line-style;
 }
+
 
 .page-footer
 {
@@ -133,7 +186,8 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-top: 10pt;
-  margin-bottom: 5pt;
+  margin-bottom: 8pt;
+
 }
 
 h1 { font-size: 25pt;}
@@ -176,17 +230,43 @@ li {
   }
 }
 
-code
+// pre > code is a code block
+// code is inline
+
+
+// code blcok
+pre.highlight
 {
-  padding: 8pt;
-  display: block;
   background-color: $code-background-color;
   color: $code-foreground-color;
   font-family: monospace;
+  border: 1px solid black;
+}
+
+// inline code
+code
+{
+  background-color: $code-background-color;
+  color: $code-foreground-color;
+  font-family: monospace;
+
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+pre.highlight > code
+{
+  display: block;
+  padding: 5pt;
 }
 
 img {
-  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 80%;
   vertical-align: middle;
 }
 
