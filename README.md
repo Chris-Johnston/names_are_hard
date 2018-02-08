@@ -1,10 +1,6 @@
 # names_are_hard
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+This is a theme that is used for https://chris-johnston.me
 
 
 ## Installation
@@ -31,11 +27,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Layouts:
+  - Boring: A plain, monospace page.
+  - Home: A home page, that has a header and shows the content of the homepage.
+  - HomePosts: Same as home, but includes the past 3 posts on the bottom of the page header.
+  - Page: Shows the content of a single page, but with no title bar.
+  - PlainHTML: A plain HTML page.
+  - Post: Shows the content of a single page, but with a title bar.
+
+Sass:
+  - `names_are_hard.scss` is the main style file.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Chris-Johnston/names_are_hard.
 
 ## Development
 
@@ -49,4 +54,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `names_ar
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
