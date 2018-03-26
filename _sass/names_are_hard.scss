@@ -84,8 +84,9 @@ body li
 
 .github-link
 {
+  display: block;
   position: absolute;
-  bottom: 15pt;
+  top: 50pt;
   right: 10pt;
   font-size: 12pt;
 }
@@ -107,6 +108,10 @@ body li
   padding-top: 10pt;
   padding-bottom: 5pt;
   border-bottom: $line-style;
+  height: 10pt;
+  overflow: hidden;
+  display: block;
+  margin-right: 175px;
 }
 
 .site-header-tall > .post-wrapper
@@ -301,6 +306,53 @@ table {
   }
   td {
     border: 1px solid darken($foreground-color, 35%);
+  }
+}
+
+@media only screen and (max-width: 700px)
+{
+  body{
+    background: red;
+  }
+  .site-header-tall
+  {
+    height: auto;
+  }
+
+  .site-title {
+    position: static;
+    display: block;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    font-size: 30pt;
+  }
+  .github-link {
+    position: static;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: auto;
+    height: auto;
+    top: auto;
+    bottom: auto;
+    left: auto;
+  }
+   .site-header-tall > .post-wrapper
+  {
+    margin: 5px 10px;
+    position: static;
+    display: block;
+    width: auto;
+    height: auto;
+    top: auto;
+    bottom: auto;
+    left: auto;
   }
 }
 
