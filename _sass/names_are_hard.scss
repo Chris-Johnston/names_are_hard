@@ -22,6 +22,11 @@ $body-li-size: 12pt;
 
 $line-style: 0.5px dotted $foreground-color;
 
+html
+{
+  overflow: hidden;
+}
+
 body
 {
   color: $foreground-color;
@@ -311,7 +316,7 @@ table {
 
 @media only screen and (max-width: 700px)
 {
-  
+
   .site-header-tall
   {
     height: auto;
