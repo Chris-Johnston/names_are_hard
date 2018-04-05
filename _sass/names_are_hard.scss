@@ -22,11 +22,6 @@ $body-li-size: 12pt;
 
 $line-style: 0.5px dotted $foreground-color;
 
-html
-{
-  overflow: hidden;
-}
-
 body
 {
   color: $foreground-color;
@@ -166,7 +161,7 @@ body li
 {
   height: 10pt;
   text-align: center;
-  width: 100%;
+  width: auto;
   padding: 5pt;
 }
 
@@ -263,6 +258,8 @@ code
 
   padding-left: 3px;
   padding-right: 3px;
+
+  overflow: scroll;
 }
 
 pre.highlight > code
