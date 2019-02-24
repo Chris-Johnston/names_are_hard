@@ -49,46 +49,26 @@ body li
 
 .site-header
 {
-  position:relative;
-
-  background-color: $background-color;
+  // margin-top: 20pt;
+  padding-top: 20pt;
+  padding-bottom: 10pt;
+  background-color: darken($background-color, 10%);
   color: $foreground-color;
-
   font-family: $font-title;
-
-  height: 50pt;
-
-}
-
-// tall site header used for headerposts
-.site-header-tall
-{
-  // I'm literally extending the height of it. lol
-  @extend .site-header;
-
-  height: 70pt;
-
-  border-bottom: $line-style;
 }
 
 .site-title
 {
-  height: 30pt;
-  position: absolute;
-  top: 5pt;
-  bottom: 15pt;
-  left: 10pt;
+  margin: 20pt 10pt;
   font-size: 40pt;
   text-decoration: underline;
 }
 
-.github-link
+.github-link, .site-link
 {
-  display: block;
-  position: absolute;
-  top: 50pt;
-  right: 10pt;
-  font-size: 12pt;
+  font-size: 15pt;
+  margin: 5pt;
+  text-decoration: none;
 }
 
 .home
@@ -160,10 +140,8 @@ body li
 
 .page-title
 {
-  margin-top: 10pt;
-  margin-bottom: 20pt;
-  padding-bottom: 5pt;
-  border-bottom: $line-style;
+  margin-top: 30pt;
+  margin-bottom: 5pt;
 }
 
 

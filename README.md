@@ -32,12 +32,16 @@ Or install it yourself as:
 ## Usage
 
 Layouts:
-  - Boring: A plain, monospace page.
-  - Home: A home page, that has a header and shows the content of the homepage.
-  - HomePosts: Same as home, but includes the past 3 posts on the bottom of the page header.
-  - Page: Shows the content of a single page, but with no title bar.
-  - PlainHTML: A plain HTML page.
-  - Post: Shows the content of a single page, but with a title bar.
+  - `boring`: A plain, monospace page.
+  - `home`: A home page, that has a header and shows the content of the homepage.
+  - `homeposts`: Same as home, but includes the past 3 posts on the bottom of the page header.
+  - `page`: Shows the content of a single page, but with no title bar.
+  - `plainhtml`: A plain HTML page.
+  - `post`: Shows the content of a single page, but with a title bar.
+
+Tags:
+  The `project` tag can be applied to group posts into the list
+  of projects.
 
 Sass:
   - `names_are_hard.scss` is the main style file.

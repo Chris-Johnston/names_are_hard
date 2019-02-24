@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: homeposts
 ---
 
 # names_are_hard
