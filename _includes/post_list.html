@@ -1,0 +1,18 @@
+<div class="post-list">
+        {% for post in site.posts %}
+          {% unless post.tags contains "project" %}
+          <div class="post">
+            <a href="{{ post.url }}">
+                <h2 class="post-title">
+                {{ post.title }}
+                </h2>
+                <div class="post-date">{{ post.date | date_to_long_string }}</div>
+                <br />
+                <div class="post-description">
+                {{ post.description | strip_html | truncatewords:50 }}
+                </div>
+            </a>
+          </div>
+          {% endunless %}
+        {% endfor %}
+</div>

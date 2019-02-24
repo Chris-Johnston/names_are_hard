@@ -1,6 +1,8 @@
 ---
-layout: homeposts
+layout: home
 ---
+
+{% include project_list.html %}
 
 # names_are_hard
 

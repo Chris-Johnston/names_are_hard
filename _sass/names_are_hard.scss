@@ -140,10 +140,9 @@ body li
 
 .page-title
 {
-  margin-top: 30pt;
-  margin-bottom: 5pt;
+  font-size: 40pt;
+  font-weight: 100;
 }
-
 
 .page-footer
 {
@@ -169,6 +168,63 @@ a {
     color: $highlight-color;
     text-decoration: underline;
   }
+}
+
+.post-list a,
+.project-list a
+{
+  color: $foreground-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $highlight-color;
+    .project-title,
+    .post-title
+    {
+      text-decoration: underline;
+    }
+  }
+}
+
+.project-title,
+.post-title
+{
+  display: inline;
+}
+
+.project-date,
+.post-date
+{
+  margin-left: 5pt;
+  display: inline;
+  color: darken($foreground-color, 30%);
+}
+
+.project-description,
+.post-description
+{
+  display: inline-block;
+  padding-top: 2pt;
+  margin-bottom: 15pt;
+}
+
+.project-gh::before
+{
+  content: "GitHub: ";
+}
+.project-gh
+{
+  margin-left: 5pt;
+  color: darken($color: $foreground-color, $amount: 30%);
+}
+.page-gh
+{
+  font-size: 15pt; 
+}
+.title-wrapper
+{
+  margin-top: 30pt;
+  margin-bottom: 20pt;
 }
 
 .site-title, .github-link
@@ -227,8 +283,7 @@ li {
 // pre > code is a code block
 // code is inline
 
-
-// code blcok
+// code block
 pre.highlight
 {
   background-color: $code-background-color;
