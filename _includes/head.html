@@ -4,14 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {% if page.title %}
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | {{ site.website_title }}</title>
+    <meta property="og:title" content="{{ page.title }}">
+  {% else %}
+    <title>{{ site.website_title }}</title>
+    <meta property="og:title" content="{{ site.website_title }}">
   {% endif %}
   {% if page.description %}
     <title>{{ page.description }}</title>
     <meta name="description" content="{{ page.description }}">
+    <meta property="og:description" content="{{ page.description }}">
   {% endif %}
+  <meta name="theme-color" content="#142B51"/>
+  <!-- open graph tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ site.website_title }}" />
 
   <!-- google-specific meta tag -->
   <meta name="google" content="nositelinkssearchbox" />
-
 </head>
