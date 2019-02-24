@@ -5,8 +5,10 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed');
 
 // fonts
-$font-title: 'Oswald', sans-serif;
-$font-main: 'Roboto Condensed', sans-serif !important;
+$font-title: 'Oswald',
+sans-serif;
+$font-main: 'Roboto Condensed',
+sans-serif !important;
 
 // colors
 $background-color: #142B51 !default;
@@ -22,15 +24,13 @@ $body-li-size: 12pt;
 
 $line-style: 0.5px dotted $foreground-color;
 
-body
-{
+body {
   color: $foreground-color;
   background-color: $background-color;
   font-family: $font-main;
 }
 
-body p
-{
+body p {
   font-size: $body-font-size;
   line-height: 15pt;
 
@@ -38,8 +38,7 @@ body p
   margin-bottom: 7pt;
 }
 
-body li
-{
+body li {
   font-size: $body-li-size;
   line-height: $body-li-size + 2pt;
 
@@ -47,8 +46,7 @@ body li
   margin-bottom: 2pt;
 }
 
-.site-header
-{
+.site-header {
   // margin-top: 20pt;
   padding-top: 20pt;
   padding-bottom: 10pt;
@@ -56,48 +54,43 @@ body li
   color: $foreground-color;
   font-family: $font-title;
 }
-.site-header a
-{
+
+.site-header a {
   display: inline-block;
 }
 
-.site-title
-{
+.site-title {
   margin: 2pt 10pt;
   font-size: 40pt;
   text-decoration: underline;
 }
 
-.github-link, .site-link
-{
+.github-link,
+.site-link {
   font-size: 15pt;
   margin: 5pt;
   text-decoration: none;
 }
 
-.home
-{
+.home {
   padding-left: 20pt;
   padding-right: 20pt;
 }
 
-.content-wrapper
-{
+.content-wrapper {
   padding-top: 10pt;
 }
 
-.content-wrapper
-{
+.content-wrapper {
   display: grid;
   grid-template-columns: 1fr 700px 1fr;
 }
-.content-wrapper > *
-{
+
+.content-wrapper>* {
   grid-column: 2;
 }
 
-.post-wrapper
-{
+.post-wrapper {
   border-top: $line-style;
   padding-top: 10pt;
   padding-bottom: 5pt;
@@ -108,8 +101,7 @@ body li
   margin-right: 175px;
 }
 
-.site-header-tall > .post-wrapper
-{
+.site-header-tall>.post-wrapper {
   border: 0;
   padding-top: 0;
   position: absolute;
@@ -118,46 +110,39 @@ body li
   font-size: 12pt;
 }
 
-.site-header-tall > .post-wrapper > .post-list-heading
-{
+.site-header-tall>.post-wrapper>.post-list-heading {
   font-size: 12pt;
 }
 
-.post-list-heading
-{
+.post-list-heading {
   display: inline;
 }
 
-.post-list
-{
+.post-list {
   margin-left: 1pt;
   display: inline;
   overflow: hidden;
   width: 50%;
 }
 
-.post-element
-{
+.post-element {
   display: inline;
   margin-left: 5pt;
 }
 
-.page-title
-{
+.page-title {
   font-size: 40pt;
   font-weight: 100;
 }
 
-.page-footer
-{
+.page-footer {
   height: 10pt;
   text-align: center;
   width: auto;
   padding: 5pt;
 }
 
-.footer-copyright
-{
+.footer-copyright {
   text-align: center;
 }
 
@@ -175,99 +160,117 @@ a {
 }
 
 .post-list a,
-.project-list a
-{
+.project-list a {
   color: $foreground-color;
   text-decoration: none;
 
   &:hover {
     color: $highlight-color;
+
     .project-title,
-    .post-title
-    {
+    .post-title {
       text-decoration: underline;
     }
   }
 }
 
 .project-title,
-.post-title
-{
+.post-title {
   display: inline;
 }
 
 .project-date,
-.post-date
-{
+.post-date {
   margin-left: 5pt;
   display: inline;
   color: darken($foreground-color, 30%);
 }
 
 .project-description,
-.post-description
-{
+.post-description {
   display: inline-block;
   padding-top: 2pt;
   margin-bottom: 15pt;
 }
 
-.project-gh::before
-{
+.project-gh::before {
   content: "GitHub: ";
 }
-.project-gh
-{
+
+.project-gh {
   margin-left: 5pt;
   color: darken($color: $foreground-color, $amount: 30%);
 }
-.page-gh
-{
-  font-size: 15pt; 
+
+.page-gh {
+  font-size: 15pt;
 }
-.title-wrapper
-{
+
+.title-wrapper {
   margin-top: 30pt;
   margin-bottom: 20pt;
 }
 
-.site-title, .github-link
-{
+.site-title,
+.github-link {
   color: $highlight-color;
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   margin-top: 10pt;
   margin-bottom: 8pt;
 
 }
 
-h1 { font-size: 25pt;}
-h2 { font-size: 22pt;}
-h3 { font-size: 20pt;}
-h4 { font-size: 18pt;}
-h5 { font-size: 15pt;}
-h6 { font-size: 12pt;}
+h1 {
+  font-size: 25pt;
+}
 
-b, strong, i, em
-{
+h2 {
+  font-size: 22pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+h4 {
+  font-size: 18pt;
+}
+
+h5 {
+  font-size: 15pt;
+}
+
+h6 {
+  font-size: 12pt;
+}
+
+b,
+strong,
+i,
+em {
   color: $highlight-color;
 }
 
-b, strong
-{
+b,
+strong {
   font-weight: bold;
 }
 
-i, em
-{
+i,
+em {
   font-style: italic;
 }
 
-ul
-{
+ul {
   margin-left: 15pt;
   list-style-type: disc;
 }
@@ -278,9 +281,10 @@ ol {
 }
 
 li {
-  > ul,
-  > ol {
-  margin-bottom: 0;
+
+  >ul,
+  >ol {
+    margin-bottom: 0;
   }
 }
 
@@ -288,8 +292,7 @@ li {
 // code is inline
 
 // code block
-pre.highlight
-{
+pre.highlight {
   background-color: $code-background-color;
   color: $code-foreground-color;
   font-family: monospace;
@@ -297,8 +300,7 @@ pre.highlight
 }
 
 // inline code
-code
-{
+code {
   background-color: $code-background-color;
   color: $code-foreground-color;
   font-family: monospace;
@@ -309,14 +311,12 @@ code
   overflow: scroll;
 }
 
-pre.highlight > code
-{
+pre.highlight>code {
   display: block;
   padding: 5pt;
 }
 
-iframe 
-{
+iframe {
   margin: 10pt auto;
   display: block;
   width: 80%;
@@ -334,8 +334,7 @@ img {
   vertical-align: middle;
 }
 
-blockquote
-{
+blockquote {
   display: block;
   padding: 8pt;
   background: lighten($background-color, 10%);
@@ -347,34 +346,36 @@ table {
   text-align: left;
   border-collapse: collapse;
   border: 1px solid $foreground-color;
+
   tr {
     &:nth-child(even) {
       background-color: lighten($background-color, 10%);
     }
   }
-  th, td {
+
+  th,
+  td {
     padding: 2pt;
   }
+
   th {
     background-color: lighten($background-color, 15%);
     border: 1px solid $foreground-color;
     border-bottom-color: darken($foreground-color, 35%);
   }
+
   td {
     border: 1px solid darken($foreground-color, 35%);
   }
 }
 
-@media only screen and (max-width: 400px)
-{
+@media only screen and (max-width: 400px) {
 
-  .content-wrapper
-  {
+  .content-wrapper {
     display: block;
   }
 
-  .site-header-tall
-  {
+  .site-header-tall {
     height: auto;
   }
 
@@ -389,6 +390,7 @@ table {
     left: auto;
     font-size: 30pt;
   }
+
   .site-header a {
     position: static;
     display: block;
@@ -402,8 +404,8 @@ table {
     bottom: auto;
     left: auto;
   }
-   .site-header-tall > .post-wrapper
-  {
+
+  .site-header-tall>.post-wrapper {
     margin: 5px 10px;
     position: static;
     display: block;
