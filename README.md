@@ -6,7 +6,6 @@ This is a theme that is used for https://chris-johnston.me
 
 <img src="screenshot.png" style="max-width: 400px" />
 
-
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
@@ -32,11 +31,8 @@ Or install it yourself as:
 ## Usage
 
 Layouts:
-  - `boring`: A plain, monospace page.
   - `home`: A home page, that has a header and shows the content of the homepage.
-  - `homeposts`: Same as home, but includes the past 3 posts on the bottom of the page header.
   - `page`: Shows the content of a single page, but with no title bar.
-  - `plainhtml`: A plain HTML page.
   - `post`: Shows the content of a single page, but with a title bar.
 
 Tags:
