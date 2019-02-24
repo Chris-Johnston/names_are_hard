@@ -56,10 +56,14 @@ body li
   color: $foreground-color;
   font-family: $font-title;
 }
+.site-header a
+{
+  display: inline-block;
+}
 
 .site-title
 {
-  margin: 20pt 10pt;
+  margin: 2pt 10pt;
   font-size: 40pt;
   text-decoration: underline;
 }
@@ -361,7 +365,7 @@ table {
   }
 }
 
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 400px)
 {
 
   .content-wrapper
@@ -385,7 +389,7 @@ table {
     left: auto;
     font-size: 30pt;
   }
-  .github-link {
+  .site-header a {
     position: static;
     display: block;
     margin-left: 10px;
