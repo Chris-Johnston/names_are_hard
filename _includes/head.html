@@ -20,6 +20,10 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="{{ site.website_title }}" />
 
+  {% if page.image %}
+  <meta property="og:image" content="{{ site.baseurl }}{{ page.image }}" />
+  {% endif %}
+
   <!-- google-specific meta tag -->
   <meta name="google" content="nositelinkssearchbox" />
 </head>
