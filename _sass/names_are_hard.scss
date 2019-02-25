@@ -135,6 +135,13 @@ body li {
   display: inline-block;
 }
 
+.page-description
+{
+  font-size: 18pt;
+  font-weight: 100;
+  color: darken($color: $foreground-color, $amount: 20%);
+}
+
 .page-date
 {
   margin-left: 5pt;
