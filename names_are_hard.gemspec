@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "names_are_hard"
-  spec.version       = "0.1.12"
+  spec.version       = "0.2.1"
   spec.authors       = ["Chris Johnston"]
-  spec.email         = ["githubchrisjohnston@gmail.com"]
+  spec.email         = ["chjohnston@protonmail.com"]
 
   spec.summary       = %q{This is a theme used for the website of github user Chris-Johnston.}
   spec.homepage      = "https://github.com/Chris-Johnston/names_are_hard"

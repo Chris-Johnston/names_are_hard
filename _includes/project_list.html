@@ -1,0 +1,26 @@
+<div class="project-list">
+    {% for post in site.posts %}
+    {% if post.tags contains "project" %}
+    <div class="project">
+        <a href="{{ post.url }}">
+            <h2 class="project-title">
+                {{ post.title }}
+            </h2>
+            <div class="project-date">{{ post.date | date: "%B %Y" }}</div>
+        </a>
+        {% if post.github_url %}
+        <a href="{{ post.github_url }}" class="project-gh">
+            {{ post.github_short }}
+        </a>
+        {% endif %}
+        <br />
+        <div class="project-description">
+            {{ post.description | strip_html | truncatewords:50 }}
+        </div>
+        {% if post.image %}
+        <img class="project-image" alt="Image of {{ post.title }}" src="{{ site.baseurl }}{{ post.image }}" />
+        {% endif %}
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

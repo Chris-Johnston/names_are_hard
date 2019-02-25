@@ -2,6 +2,8 @@
 layout: home
 ---
 
+{% include project_list.html %}
+
 # names_are_hard
 
 I couldn't think of any name that was better than this.
