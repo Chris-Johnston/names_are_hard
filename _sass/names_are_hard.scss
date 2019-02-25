@@ -173,6 +173,12 @@ a {
   }
 }
 
+.project
+{
+  display: block;
+  margin-bottom: 25pt;
+}
+
 .project-title,
 .post-title {
   display: inline;
@@ -189,7 +195,6 @@ a {
 .post-description {
   display: inline-block;
   padding-top: 2pt;
-  margin-bottom: 15pt;
 }
 
 .project-gh::before {
