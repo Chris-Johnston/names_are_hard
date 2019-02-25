@@ -17,6 +17,9 @@
         <div class="project-description">
             {{ post.description | strip_html | truncatewords:50 }}
         </div>
+        {% if post.image %}
+        <img class="project-image" alt="Image of {{ post.title }}" src="{{ site.baseurl }}{{ post.image }}" />
+        {% endif %}
     </div>
     {% endif %}
     {% endfor %}

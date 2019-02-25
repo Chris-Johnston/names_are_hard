@@ -122,7 +122,6 @@ body li {
   margin-left: 1pt;
   display: inline;
   overflow: hidden;
-  width: 50%;
 }
 
 .post-element {
@@ -204,6 +203,11 @@ a {
 
 .page-gh {
   font-size: 15pt;
+}
+
+.project-image
+{
+  max-height: 300px;
 }
 
 .title-wrapper {
