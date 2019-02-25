@@ -132,6 +132,14 @@ body li {
 .page-title {
   font-size: 40pt;
   font-weight: 100;
+  display: inline-block;
+}
+
+.page-date
+{
+  margin-left: 5pt;
+  display: inline;
+  color: darken($foreground-color, 30%);
 }
 
 .page-footer {
