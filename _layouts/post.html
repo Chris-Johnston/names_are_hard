@@ -16,6 +16,10 @@
         {% endif %}
       </div>
       {% endif %}
+      {% if page.image %}
+      <img src="{{ site.baseurl }}{{ page.image }}"
+        alt="Picture of {{ page.title }}" />
+      {% endif %}
       {{ content }}
     </div>
   </div>
