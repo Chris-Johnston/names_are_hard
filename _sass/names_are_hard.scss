@@ -53,6 +53,8 @@ body li {
   background-color: darken($background-color, 10%);
   color: $foreground-color;
   font-family: $font-title;
+  white-space: nowrap;
+  
 }
 
 .site-title, .site-link {
@@ -399,7 +401,7 @@ table {
   }
 }
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 750px)
 {
   .site-title
   {
@@ -418,8 +420,8 @@ table {
   .site-header .site-link 
   {
     position: static;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: auto;
