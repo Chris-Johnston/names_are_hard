@@ -452,7 +452,7 @@ table {
 
   .project
   {
-    .project-title
+    .project-title, .page-title
     {
       display: block;
       margin-bottom: 2pt;
@@ -462,6 +462,11 @@ table {
       display: block;
       margin: 2pt;
     }
+  }
+  .page-date, .page-description
+  {
+    display: block;
+    margin: 2pt;
   }
 }
 
