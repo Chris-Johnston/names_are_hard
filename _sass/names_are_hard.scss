@@ -174,15 +174,22 @@ a {
 
 .post-list a,
 .project-list a {
-  color: $foreground-color;
+
+  color: darken($foreground-color, 30%);
+
+  .project-title
+  {
+    color: $foreground-color;
+  }
+
   text-decoration: none;
 
   &:hover {
     color: $highlight-color;
-
-    .project-title,
-    .post-title {
+    .project-title
+    {
       text-decoration: underline;
+      color: $highlight-color;
     }
   }
 }
@@ -194,22 +201,11 @@ a {
   margin-bottom: 25pt;
 }
 
-.project-title,
-.post-title {
-  display: inline;
-}
-
 .project-date,
 .post-date {
   margin-left: 5pt;
   display: inline;
   color: darken($foreground-color, 30%);
-}
-
-.project-description,
-.post-description {
-  display: inline-block;
-  padding-top: 2pt;
 }
 
 .project-gh::before {
@@ -219,6 +215,17 @@ a {
 .project-gh {
   margin-left: 5pt;
   color: darken($color: $foreground-color, $amount: 30%);
+
+  &:hover
+  {
+    text-decoration: underline;
+  }
+}
+
+.project-description,
+.post-description {
+  display: inline-block;
+  padding-top: 2pt;
 }
 
 .page-gh {
