@@ -55,7 +55,7 @@ body li {
   font-family: $font-title;
 }
 
-.site-header a {
+.site-title, .site-link {
   display: inline-block;
 }
 
@@ -79,9 +79,6 @@ body li {
 
 .content-wrapper {
   padding-top: 10pt;
-}
-
-.content-wrapper {
   display: grid;
   grid-template-columns: 1fr 700px 1fr;
 }
@@ -394,20 +391,22 @@ table {
   }
 }
 
-@media only screen and (max-width: 400px) {
-
-  .content-wrapper {
+@media screen and (max-width: 400px) 
+{
+  .site-header a
+  {
     display: block;
   }
+}
 
-  .site-header-tall {
-    height: auto;
-  }
-
-  .site-title {
+@media screen and (max-width: 800px)
+{
+  .site-title
+  {
     position: static;
     display: block;
     margin: 10px;
+    margin-bottom: 15px;
     width: auto;
     height: auto;
     top: auto;
@@ -416,9 +415,9 @@ table {
     font-size: 30pt;
   }
 
-  .site-header a {
+  .site-header .site-link 
+  {
     position: static;
-    display: block;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 5px;
@@ -430,7 +429,7 @@ table {
     left: auto;
   }
 
-  .site-header-tall>.post-wrapper {
+  .site-header-tall > .post-wrapper {
     margin: 5px 10px;
     position: static;
     display: block;
@@ -439,6 +438,30 @@ table {
     top: auto;
     bottom: auto;
     left: auto;
+  }
+
+  .content-wrapper
+  {
+    display: block;
+  }
+
+  .project-list
+  {
+    max-width: 95%;
+  }
+
+  .project
+  {
+    .project-title
+    {
+      display: block;
+      margin-bottom: 2pt;
+    }
+    .project-date, .project-gh, .project-description
+    {
+      display: block;
+      margin: 2pt;
+    }
   }
 }
 
