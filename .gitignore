@@ -1,3 +1,5 @@
+.jekyll-cache
+
 *.idea
 *.gem
 .bundle
