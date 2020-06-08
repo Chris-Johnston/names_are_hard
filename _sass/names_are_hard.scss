@@ -2,13 +2,12 @@
 
 // use the style reset
 @import "reset";
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Roboto+Mono');
 
 // fonts
-$font-title: 'Oswald',
-sans-serif;
-$font-main: 'Roboto Condensed',
-sans-serif !important;
+$font-title: 'Oswald', sans-serif;
+$font-main: 'Roboto Condensed', sans-serif !important;
+$font-mono: 'Roboto Mono', monospace;
 
 // colors
 $background-color: #142B51 !default;
@@ -333,7 +332,7 @@ li {
 pre.highlight {
   background-color: $code-background-color;
   color: $code-foreground-color;
-  font-family: monospace;
+  font-family: $font-mono;
   border: 1px solid black;
 }
 
@@ -341,7 +340,7 @@ pre.highlight {
 code {
   background-color: $code-background-color;
   color: $code-foreground-color;
-  font-family: monospace;
+  font-family: $font-mono;
 
   padding-left: 3px;
   padding-right: 3px;
