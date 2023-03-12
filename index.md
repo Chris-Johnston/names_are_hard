@@ -66,6 +66,7 @@ terrae [monstro retentas](http://www.non.io/immocaelumque) musco est amatum
 nubibus. Parnasi fatus. Paelice se dixi silva veste pererrat undique pugnando
 montibus *ne*!
 
+```cpp
     if (burn) {
         slashdotLdap(virtual, hypermedia);
         mips = document(soapVector, 2, status_dongle_eide);
@@ -95,6 +96,7 @@ montibus *ne*!
         piconet_windows_design.external_port_computer(daw_phishing - -3,
                 proxy_nas_error + ram, 5);
     }
+```
 
 Vigilans ne esse inplevit lignea Mars aquas pro cum mirabilis in invidiam est
 dedit Glaucus inveniunt carmina movet aureus? Nitido hospes gratissima
