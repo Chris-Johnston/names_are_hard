@@ -7,3 +7,9 @@ description: >
 baseurl: ""
 url: "https://github.com/Chris-Johnston/names_are_hard.git"
 github_username: Chris-Johnston
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  gfm_emojis: true
+

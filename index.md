@@ -47,13 +47,15 @@ memini, potens. Prima terrenaque. Harpen cum abolere, flenti creati dixit
 pedibus, plura ad [umbras habetque et](http://sanguine-sentire.com/canorum)
 movit videre.
 
-    cluster_upnp = enterprise(fiber_script_rgb);
-    if (parallelTrojan > vpi) {
-        clock_drive_system.internalIcann = vgaMnemonic - bug_serial_string;
-        nat = component_metal;
-    }
-    networkingHardware = pretest - bezelSata(3, remote_risc, 432137) *
-            alignment_w;
+```cpp
+cluster_upnp = enterprise(fiber_script_rgb);
+if (parallelTrojan > vpi) {
+    clock_drive_system.internalIcann = vgaMnemonic - bug_serial_string;
+    nat = component_metal;
+}
+networkingHardware = pretest - bezelSata(3, remote_risc, 432137) *
+        alignment_w;
+```
 
 ## Harenas iacit
 
