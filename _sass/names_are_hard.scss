@@ -179,6 +179,11 @@ a {
   color: darken($foreground-color, 30%);
 }
 
+.post-list
+{
+  list-style: none;
+}
+
 .post-list li {
   a {
     text-decoration: none;
