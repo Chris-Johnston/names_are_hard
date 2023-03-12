@@ -4,13 +4,6 @@
 
 This is a theme that is used for https://chris-johnston.me
 
-## I'm no longer maintaining this project here.
-
-I will probably not update this repo anymore. I use this theme for my personal GitHub Pages site,
-and that's it, and so it's just easier to keep things in one place.
-
-See https://github.com/Chris-Johnston/Chris-Johnston.github.io
-
 <img src="screenshot.png" style="max-width: 400px" />
 
 ## Installation
@@ -48,6 +41,10 @@ Tags:
 
 Sass:
   - `names_are_hard.scss` is the main style file.
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/Chris-Johnston/names_are_hard.
 
 ## Development
 
