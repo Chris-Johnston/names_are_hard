@@ -183,10 +183,23 @@ a {
 .project-list a {
 
   color: darken($foreground-color, 30%);
+  line-height: 20px;
 
   .project-title, .post-title
   {
+    display: inline-block;
     color: $foreground-color;
+  }
+
+  .post-date {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .post-description
+  {
+    display: inline-block;
+    margin-left: 5pt;
   }
 
   text-decoration: none;
@@ -196,7 +209,6 @@ a {
     .project-title, .post-title,
     .post-date, .project-date
     {
-      text-decoration: underline;
       color: $highlight-color;
     }
   }
@@ -224,13 +236,13 @@ a {
   }
 }
 
-.project-description,
-.post-description {
-  display: inline-block;
-  padding-top: 8pt;
-  padding-bottom: 10px;
-  border-bottom: 1px dashed darken($color: $foreground-color, $amount: 30%);
-}
+// .project-description,
+// .post-description {
+//   display: inline-block;
+//   padding-top: 8pt;
+//   padding-bottom: 10px;
+//   border-bottom: 1px dashed darken($color: $foreground-color, $amount: 30%);
+// }
 
 .page-gh {
   font-size: 15pt;
