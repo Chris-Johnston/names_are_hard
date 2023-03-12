@@ -1,18 +1,23 @@
 <div class="post-list">
     {% for post in site.posts %}
-    {% unless post.tags contains "project" %}
     <div class="post">
         <a href="{{ post.url }}">
             <h2 class="post-title">
                 {{ post.title }}
+                <div class="post-date">{{ post.date | date: "%B %Y" }}</div>
             </h2>
-            <div class="post-date">{{ post.date | date_to_long_string }}</div>
-            <br />
-            <div class="post-description">
-                {{ post.description | strip_html | truncatewords:50 }}
-            </div>
         </a>
+        {% if post.github_url %}
+        <a href="{{ post.github_url }}" class="project-gh">
+            {{ post.github_short }}
+        </a>
+        {% endif %}
+        <div class="post-description">
+            {{ post.description | strip_html | truncatewords:50 }}
+        </div>
+        {% if post.image %}
+            <img class="post-image" alt="Image of {{ post.title }}" src="{{ site.baseurl }}{{ post.image }}" />
+        {% endif %}
     </div>
-    {% endunless %}
     {% endfor %}
 </div>

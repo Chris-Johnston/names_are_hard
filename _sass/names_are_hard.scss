@@ -2,13 +2,12 @@
 
 // use the style reset
 @import "reset";
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Roboto+Mono');
 
 // fonts
-$font-title: 'Oswald',
-sans-serif;
-$font-main: 'Roboto Condensed',
-sans-serif !important;
+$font-title: 'Oswald', sans-serif;
+$font-main: 'Roboto Condensed', sans-serif !important;
+$font-mono: 'Roboto Mono', monospace;
 
 // colors
 $background-color: #142B51 !default;
@@ -172,12 +171,20 @@ a {
   }
 }
 
+.project-date,
+.post-date {
+  font-size: medium;
+  margin-left: 5pt;
+  display: inline;
+  color: darken($foreground-color, 30%);
+}
+
 .post-list a,
 .project-list a {
 
   color: darken($foreground-color, 30%);
 
-  .project-title
+  .project-title, .post-title
   {
     color: $foreground-color;
   }
@@ -186,7 +193,8 @@ a {
 
   &:hover {
     color: $highlight-color;
-    .project-title
+    .project-title, .post-title,
+    .post-date, .project-date
     {
       text-decoration: underline;
       color: $highlight-color;
@@ -201,19 +209,13 @@ a {
   margin-bottom: 25pt;
 }
 
-.project-date,
-.post-date {
-  margin-left: 5pt;
-  display: inline;
-  color: darken($foreground-color, 30%);
-}
-
 .project-gh::before {
   content: "GitHub: ";
 }
 
 .project-gh {
-  margin-left: 5pt;
+  display: block;
+  padding-top: 4pt;
   color: darken($color: $foreground-color, $amount: 30%);
 
   &:hover
@@ -225,16 +227,20 @@ a {
 .project-description,
 .post-description {
   display: inline-block;
-  padding-top: 2pt;
+  padding-top: 8pt;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed darken($color: $foreground-color, $amount: 30%);
 }
 
 .page-gh {
   font-size: 15pt;
 }
 
-.project-image
+.project-image,
+.post-image
 {
   max-height: 300px;
+  border: 0.5px dashed darken($color: $foreground-color, $amount: 30%);
 }
 
 .title-wrapper {
@@ -326,7 +332,7 @@ li {
 pre.highlight {
   background-color: $code-background-color;
   color: $code-foreground-color;
-  font-family: monospace;
+  font-family: $font-mono;
   border: 1px solid black;
 }
 
@@ -334,7 +340,7 @@ pre.highlight {
 code {
   background-color: $code-background-color;
   color: $code-foreground-color;
-  font-family: monospace;
+  font-family: $font-mono;
 
   padding-left: 3px;
   padding-right: 3px;
@@ -459,12 +465,14 @@ table {
     max-width: 95%;
   }
 
-  .project
+  .project,
+  .post
   {
-    .project-title, .page-title
+    .project-title, .page-title, .post-title
     {
       display: block;
       margin-bottom: 2pt;
+      color: $foreground-color;
     }
     .project-date, .project-gh, .project-description
     {
