@@ -1,14 +1,14 @@
-<div class="post-list">
+<ul class="post-list">
     {% for post in site.posts %}
-    <div class="post">
+    <li>
         <a href="{{ post.url }}">
-            <div class="post-date">{{ post.date | date: "%b %d %Y" }}</div>
-            <div class="post-title">{{ post.title }}</div>
+            <span class="post-date">{{ post.date | date: "%b %d %Y" }}</span>
+            <span class="post-title">{{ post.title }}</span>
             <br/>
-            <div class="post-description">
+            <span class="post-description">
                 {{ post.description | strip_html | truncatewords:50 }}
-            </div>
+            </span>
         </a>
-    </div>
+    </li>
     {% endfor %}
-</div>
+</ul>

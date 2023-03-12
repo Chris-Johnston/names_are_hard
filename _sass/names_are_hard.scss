@@ -10,12 +10,12 @@ $font-main: 'Roboto Condensed', sans-serif !important;
 $font-mono: 'Roboto Mono', monospace;
 
 // colors
-$background-color: #142B51 !default;
-$text-background-color: #263037;
+$background-color: #b7d3bb !default;
+$text-background-color: #c2d8ce;
 $code-background-color: #D9D9D9;
 $code-foreground-color: black;
-$foreground-color: #E2E4E9 !default;
-$highlight-color: #d2f9e6;
+$foreground-color: #1d2a24 !default;
+$highlight-color: #58806e;
 
 // fonts, only the body
 $body-font-size: 12pt !default;
@@ -179,37 +179,35 @@ a {
   color: darken($foreground-color, 30%);
 }
 
-.post-list a,
-.project-list a {
+.post-list li {
+  a {
+    text-decoration: none;
+  }
 
-  color: darken($foreground-color, 30%);
-  line-height: 20px;
-
-  .project-title, .post-title
-  {
-    display: inline-block;
-    color: $foreground-color;
+  .post-title {
+    font-size: 14pt;
+    font-weight: bold;
   }
 
   .post-date {
+    color: $highlight-color;
     display: inline-block;
-    text-align: left;
+    width: 90px;
   }
 
-  .post-description
-  {
-    display: inline-block;
-    margin-left: 5pt;
+  .post-description {
+    // the 10px discrepancy is left-margin of post-date, and whitespace between
+    // the date and title
+    padding-left: 100px;
   }
 
-  text-decoration: none;
+  margin-bottom: 20pt;
+  line-height: 20px;
 
   &:hover {
-    color: $highlight-color;
-    .project-title, .post-title,
-    .post-date, .project-date
+    .post-title, .post-date
     {
-      color: $highlight-color;
+      color: darken($highlight-color, 30%);
     }
   }
 }
@@ -345,7 +343,8 @@ pre.highlight {
   background-color: $code-background-color;
   color: $code-foreground-color;
   font-family: $font-mono;
-  border: 1px solid black;
+  // border: 1px solid black;
+  font-size: 14px;
 }
 
 // inline code
